@@ -13,6 +13,10 @@
                             Nova foto
                         </a>
                     </span>
+                    <!-- campo para filtrar pelo titulo -->
+                    <input #textoProcurado (keyup)="0" class="form-control" placeholder="filtrar pelo título da foto">
+                    <!--#textoProcurado = variável local que pode ser usada no templase-->
+                    <!--(keyup)="0" serve para o angular renderizar a tela-->
                 </div> 
             </form>
         </div> <!-- fim col-md-12 -->
@@ -20,7 +24,8 @@
     <br>
 
     <div class="row">
-        <painel *ngFor="let foto of fotos" titulo={{foto.titulo}} class="col-md-2">
+        <!--| (pipe) = filtro-->
+        <painel *ngFor="let foto of fotos | filtroPorTitulo: textoProcurado.value" titulo="{{foto.titulo | uppercase}}" class="col-md-2">
             <foto url="{{foto.url}}" titulo="{{foto.titulo}}"></foto>
         </painel>
     </div>
