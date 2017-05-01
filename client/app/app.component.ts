@@ -5,7 +5,8 @@ import { Http } from '@angular/http';
 ({ // annotentions in c#
     moduleId: module.id,
     selector: 'app', // indica <tag> como <app>
-    templateUrl: './app.component.html'
+    templateUrl: './app.component.html',
+    styleUrls: ['./painel.component.css']
 })
 export class AppComponent
 {
