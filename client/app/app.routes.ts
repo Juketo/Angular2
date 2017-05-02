@@ -9,6 +9,7 @@ const appRoutes: Routes = [
 // da rota for acessada.
 { path: '', component: ListagemComponent },
 { path: 'cadastro', component: CadastroComponent },
+{ path: 'cadastro/:id', component: CadastroComponent },
 { path: '**', component: ListagemComponent }, 
 // ** = se digitar qualquer outra coisa, cai no listagem
 
