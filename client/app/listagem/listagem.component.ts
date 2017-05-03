@@ -27,6 +27,7 @@ export class ListagemComponent
 
     remove(foto)
     {
+        //if (confirm('Confirma exclusão da foto?'))
         this.service
             .remove(foto)
             .subscribe(

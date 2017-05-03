@@ -9,6 +9,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListagemComponent } from './listagem/listagem.component';
 import { routing } from './app.routes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // necessário para o ngModel
+import { BotaoModule } from './botao/botao.module';
 
 @NgModule({
     // appModule tem dependencia do FotoModule
@@ -20,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // necessári
         PainelModule, 
         routing,
         FormsModule,
-        ReactiveFormsModule 
+        ReactiveFormsModule,
+        BotaoModule 
     ],
     // o que o modulo declara
     declarations: 

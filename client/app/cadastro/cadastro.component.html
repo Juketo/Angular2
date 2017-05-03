@@ -48,12 +48,12 @@
                     autocomplete="off">
                 </textarea>
             </div>
-
-            <button type="submit" class="btn btn-primary" 
+            <botao nome="Salvar" estilo="btn btn-primary" tipo="submit"
+                   [desabilitado]="meuForm.invalid"></botao>
+            <!--<button type="submit" class="btn btn-primary" 
                     [disabled]="meuForm.invalid">
-                    <!--[disabled]="meuForm.form.invalid">-->
                 Salvar
-            </button>
+            </button>-->
              <a [routerLink]="['']" class="btn btn-primary">Voltar</a>
              <!--no sistema de rotas, '' é direcionado para listagem-->
             <hr>
